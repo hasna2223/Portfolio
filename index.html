@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Diseña tu portfolio personal</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+
+            header {
+                height: auto;
+            }
+
+            #foto {
+                bottom: 0;
+                left: 0;
+            }
+
+            .layout {
+                grid-template-columns: 100%;
+                grid-column-gap: 0;
+            }
+
+            .Idiomas {
+                width: 100%;
+            }
+
+            #tablaresumen {
+                width: 100%;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            form {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            button {
+                margin: 10px 0;
+            }
+        }
+
+        form {
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox-container {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /*END FORM*/
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        header {
+            font-family: 'Poppins', sans-serif;
+            display: grid;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 0.1em 0.5em;
+            text-shadow: 0 0 10px black;
+            height: 14em;
+            background-color: rgb(114, 110, 108);
+        }
+
+        h1,
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+        #pintro {
+            color: white;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        #foto {
+            position: relative;
+            bottom: 9em;
+            left: 1em;
+            max-width: 100%;
+            height: auto;
+            z-index: 100;
+            border-radius: 50%;
+            height: 50%;
+            margin-bottom: 20px;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-column-gap: 2%;
+
+            a {
+                color: grey;
+                text-decoration: none;
+                padding: 2% 2% 2% 0;
+            }
+
+
+            .education {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 3%;
+            }
+        }
+
+        .Idiomas {
+            color: black;
+            grid-column: 1;
+            grid-row: 1 / span 2;
+            height: 60vh;
+            width: 70%;
+            background-color: #f4f3f1;
+            padding: 2%;
+        }
+
+
+        /*MENÚ NAVEGACIÓN*/
+        #menu {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            text-align: center;
+        }
+
+        nav#menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            display: grid;
+            font-size: 1.2em;
+            width: 15em;
+            padding: 5px;
+            background-color: black;
+            border: 1px solid;
+            margin: 15px auto;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /*TABLA RESUMEN*/
+        #tablaresumen p {
+            font-size: 1.2em;
+        }
+
+        #tablaresumen {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1em;
+            padding: 1em;
+            text-align: center;
+            margin: 0 auto;
+            width: 40em;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td,
+        th,
+        tr {
+            border: 1px solid;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HASNA BIDAN</h1>
+        <p id="pintro">Estudiante de ASIR en búsqueda de empleo. Soy una persona proactiva, con ganas de aprender.</p>
+        <p id="foto"><img src="hasna.png" alt="hasna_bidan" width="10%" style="border-radius: 40%;"></p>
+    </header>
+
+    <!--main-->
+    <br>
+    <div class="layout">
+        <details open>
+            <summary><a name="Formación académica"></a><strong>Formación académica</strong></summary>
+            <ul>
+                <li>Grado superior Administracion de sistemas informaticos en red (ASIR)</li>
+                <li>Grado en Estudios Ingleses (USMBA) 2015-2019</li>
+                <li>Formación básica social: 2019</li>
+            </ul>
+        </details>
+        <details open>
+            <summary><a name="Experiencia"></a><strong>Experiencia</strong></summary>
+            <ul>
+                <li>Profesora de Ingles: (2019-2024) <br>
+                    -Experiencia en dar clases de ingles (Grammar & communication). <br>
+                    -Preparación para exámenes y entrevistas en ingles. <br>
+                </li> <br>
+
+                <li>Servicio cívico en francia: (2020-2021) <br>
+                    -Certificado de practica en empresa- Francia <br>
+                    -Trabajado como animadora de grupos de jovenes <br>
+                    -Trabajado en la recepcion <br>
+                    -Administrar la página de Facebook y el correo electrónico de la organización <br>
+                </li>
+                <br>
+                <li>Certificado de primeros auxilios -Francia 2021</li>
+            </ul>
+        </details>
+
+        <div class="Idiomas">
+            <h2 style="color: black;">Idiomas:</h2>
+            <ul class="description">
+                <li>Arabe y Berber: Natal</li>
+                <li>Español:Intermidio</li>
+                <li>France: Intermidio</li>
+                <li>Ingles: Avancado</li>
+                <li>Aleman: Básico</li>
+            </ul>
+
+            <h2 style="color: black;">Herramientas y Habilidades:</h2>
+            <ul class="description">
+                <li>Sistemas operativos: Windows, Linux (Ubuntu)</li>
+                <li>Lenguajes de marcas (Html, CSS,...)</li>
+                <li>Colaboración y trabajo en equipo</li>
+                <li>Comunicación y Organización</li>
+                <li>Productividad</li>
+            </ul>
+            <h2 style="color: black;">Otros datos:</h2>
+            <ul>
+                <li>Cuento con el carne B</li>
+                <li>Disponibildad de incorporacion inmediata</li>
+                <br>
+            </ul>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <!--Fin main-->
+
+    <!--TABLA RESUMEN-->
+    <hr>
+    <section id="tablaresumen">
+        <details open>
+            <summary><a name="Datos de Contacto"></a><strong>Datos de Contacto</strong></summary> <br>
+            <table>
+                <tr style="background-color:#E8E8E8;">
+                    <th>Nombre y Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>Correo electrónico</th>
+                    <th>Fecha de nacimiento</th>
+                </tr>
+
+                <tr>
+                    <td>Hasna BIDAN</td>
+                    <td>641562175</td>
+                    <td>hassna.bidan@gmail.com</td>
+                    <td>06/01/1997</td>
+                </tr>
+            </table>
+        </details>
+    </section>
+    <hr>
+    <br>
+
+    <!--FORUM-->
+
+    <form id="myForm">
+        <h3>Contact Me</h3>
+
+        <label for="name">🙋Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">📧Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobile">📱Mobile:</label>
+        <input type="text" id="mobile" name="mobile" required>
+
+        <p><label for="motivo">Indique el motivo:</label>
+            <select name="Motivo" id="motivo">
+                <option value="Oferta_laboral">Oferta laboral</option>
+                <option value="Solicitud_de_información">Solicitud de información</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </p>
+
+
+        <label for="message">✍Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+            <label style="text-align: center;" for="acceptTerms">I accept Terms of Use</label>
+        </div>
+
+        <button type="button" onclick="Popup()">Enviar</button>
+        <button type="reset">Resetear</button>
+    </form>
+    <script>
+        function Popup() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const mobile = document.getElementById('mobile').value;
+            const message = document.getElementById('message').value;
+            const acceptTerms = document.getElementById('acceptTerms').checked;
+
+            if (name === '' || email === '' || mobile === '' || message === '' || !acceptTerms) {
+                alert('Por favor completa todos los campos y acepta los términos y condiciones.');
+            } else {
+                const popupMessage = `Nombre: ${name}\nEmail: ${email}\nMobile: ${mobile}\nMensaje: ${message}`;
+                if (confirm(`¿Son estos datos correctos?\n${popupMessage}`)) {
+                    // send form//
+                    alert('Formulario enviado exitosamente.');
+                    document.getElementById('myForm').reset();
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
